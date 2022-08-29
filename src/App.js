@@ -1,11 +1,53 @@
+import "./App.css";
+
+import requests from "./api/requests";
 import Banner from "./components/Banner";
 import Nav from "./components/Nav";
+import Row from "./components/Row";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Nav />
       <Banner />
+      <Row
+        title="NETFLIX ORIGINALS"
+        id="NO"
+        fetchUrl={requests.fechNetflixOriginals}
+        isLargeRow
+      />
+
+      <Row title="Trending Now" id="TN" fetchUrl={requests.fetchTrending} />
+
+      <Row title="Top Rated" id="TR" fetchUrl={requests.fetchTopRated} />
+      <Row
+        title="Action Movies"
+        id="AM"
+        fetchUrl={requests.fetchActionMovies}
+      />
+      <Row
+        title="Comedy Movies"
+        id="CM"
+        fetchUrl={requests.fetchComedyMovies}
+      />
+
+      <Row
+        title="Documentaries Movies"
+        id="DM"
+        fetchUrl={requests.fetchDocumentaries}
+      />
+      <Row
+        title="Comedy Movies"
+        id="CM"
+        fetchUrl={requests.fetchHorrorMovies}
+      />
+      <Row
+        title="Romance Movies"
+        id="RM"
+        fetchUrl={requests.fetchRomanceMovies}
+      />
+      <Row title="Top Rated" id="TR" fetchUrl={requests.fetchTopRated} />
+      <Row title="Trending" id="T" fetchUrl={requests.fetchTrending} />
     </div>
   );
 }
