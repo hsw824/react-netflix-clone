@@ -36,18 +36,18 @@ function App() {
         id="DM"
         fetchUrl={requests.fetchDocumentaries}
       />
-      <Row
-        title="Comedy Movies"
-        id="CM"
+      {/* <Row
+        title="Horror Movies"
+        id="HM"
         fetchUrl={requests.fetchHorrorMovies}
-      />
-      <Row
+      /> */}
+      {/* <Row
         title="Romance Movies"
         id="RM"
         fetchUrl={requests.fetchRomanceMovies}
-      />
-      <Row title="Top Rated" id="TR" fetchUrl={requests.fetchTopRated} />
-      <Row title="Trending" id="T" fetchUrl={requests.fetchTrending} />
+      /> */}
+      {/* <Row title="Top Rated" id="TR" fetchUrl={requests.fetchTopRated} /> */}
+      {/* <Row title="Trending" id="T" fetchUrl={requests.fetchTrending} /> */}
     </div>
   );
 }
