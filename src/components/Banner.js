@@ -55,6 +55,7 @@ const Banner = () => {
             >
               Play
             </button>
+
             <button className="banner__button info">More information</button>
           </div>
 
@@ -74,7 +75,7 @@ const Banner = () => {
             <Iframe
               width="640"
               height="360"
-              src={`https://www.youtube.com/embed/${movie.videos.results[0].key}?controls=0&autoplay=1&loop=1&mute=1&playlist=${movie.videos.results[0].key}`}
+              src={`https://www.youtube.com/embed/${movie.videos.results[0]?.key}?controls=0&autoplay=1&loop=1&playlist=${movie.videos.results[0]?.key}`}
               frameborder="0"
               allow=" autoplay; fullscreen"
             ></Iframe>
